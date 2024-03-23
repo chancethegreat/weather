@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Couch Potato Weather</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="main.js"></script>
+    </head>
+    <body class="h-screen">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="w-full h-full bg-neutral-50 flex-col justify-center items-center inline-flex">
+            <div class="self-stretch pl-[82px] px-10 py-2 bg-zinc-800 justify-start items-center inline-flex">
+                <div class="text-white text-lg font-normal">Couch Potato Weather</div>
+            </div>
+            <div class="w-2/3 grow shrink basis-0 pt-[83px] pb-[286px] flex-col justify-start items-center gap-[70px] inline-flex">
+                <form class="w-1/2 h-auto flex-col justify-start items-start gap-2 inline-flex">
+                    <div class="self-stretch text-slate-500 text-sm font-medium font-['Inter'] leading-tight m-auto">Find the weather for area</div>
+                    <div class="flex flex-row m-auto gap-3">
+                        <input type="zip-code" type="number" class="self-stretch px-3 py-2 bg-white border border-slate-500 justify-start items-center gap-2.5 inline-flex rounded" placeholder="Enter zip code..."> 
+                        <button id="search" class="rounded px-4 py-1 bg-zinc-600 text-white font-bold hover:bg-zinc-400">Search</button>
+                    </div>
+                    
+                    
+                </form>
+                <div id="weather-output" class="w-full relative bg-white rounded-[10px] shadow border border-black p-10">
+                    <h2 id="location" class="text-xl"></h2>
+                    <p id="temp" class="text-3xl"></p>
+                    <p id="condition" class="text-lg"></p>
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
